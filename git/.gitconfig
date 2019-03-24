@@ -1,0 +1,9 @@
+[alias]
+	# View the current working tree status using the short format and current branch
+	s = status -sb
+	st = status -sb
+
+[core]
+	# Default editor
+	editor = vim 
+
