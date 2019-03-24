@@ -11,6 +11,8 @@ dotfiles:
 	stow -Rt ~ tmux
 	@echo "=> Installing NewsBoat config"
 	stow -Rt ~ newsboat
+	@echo "=> Installing i3 config"
+	stow -Rt ~/.config i3
 
 .PHONY: test
 test: shellcheck ## Runs all the tests on the files in the repository.
