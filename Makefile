@@ -9,6 +9,8 @@ dotfiles:
 	stow -Rt ~ vi
 	@echo "=> Installing tmux config"
 	stow -Rt ~ tmux
+	@echo "=> Installing NewsBoat config"
+	stow -Rt ~ newsboat
 
 .PHONY: test
 test: shellcheck ## Runs all the tests on the files in the repository.
