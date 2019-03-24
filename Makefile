@@ -7,3 +7,5 @@ dotfiles:
 	stow -Rt ~ git 
 	@echo "=> Installing Vim config"
 	stow -Rt ~ vi
+	@echo "=> Installing tmux config"
+	stow -Rt ~ tmux
