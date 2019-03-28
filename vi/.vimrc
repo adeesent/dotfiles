@@ -30,3 +30,7 @@ let g:netrw_altv=1
 " Tree view
 let g:netrw_liststyle=3
 
+" Spellchecking
+map <F6> :setlocal spell! spelllang=en_us<CR>
+" Spellcheck for git commit
+autocmd Filetype gitcommit setlocal spell textwidth=72
