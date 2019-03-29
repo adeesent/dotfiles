@@ -8,6 +8,7 @@ dotfiles:
 	@echo "=> Installing Vim config"
 	mkdir -p ~/.vim
 	stow -Rt ~/.vim vim
+	git submodule update --init --recursive
 	@echo "=> Installing tmux config"
 	stow -Rt ~ tmux
 	@echo "=> Installing NewsBoat config"
