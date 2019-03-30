@@ -9,10 +9,9 @@ download-retries 4
 
 cache-file "cache.db"
 max-items 10000
-delete-read-articles-on-quit yes
 
 player "opbg"
-browser "opbg"
+browser "firefox"
 external-url-viewer "urlscan"
 html-renderer "w3m -T text/html"
 pager internal
