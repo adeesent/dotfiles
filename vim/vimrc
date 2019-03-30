@@ -34,3 +34,6 @@ let g:netrw_liststyle=3
 map <F6> :setlocal spell! spelllang=en_us<CR>
 " Spellcheck for git commit
 autocmd Filetype gitcommit setlocal spell textwidth=72
+
+" Enable hybrid line numbers
+set number relativenumber
