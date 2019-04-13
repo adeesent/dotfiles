@@ -37,3 +37,6 @@ autocmd Filetype gitcommit setlocal spell textwidth=72
 
 " Enable hybrid line numbers
 set number relativenumber
+
+" Go
+let g:go_def_mode='gopls'
