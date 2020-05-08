@@ -147,7 +147,7 @@ bindsym $mod+l exec $lockcmd
 # finds out, if available)
 bar {
 	position top
-        font pango:Tamzen 12
+        font pango:Hack 9 
         status_command i3status
 
  	colors {
