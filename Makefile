@@ -1,18 +1,21 @@
 .PHONY: all
-all: dotfiles
+all: install
 
-.PHONY: dotfiles
-dotfiles:
+.PHONY: install
+install:
 	@echo "=> Installing Git config"
-	stow -Rt ~ git 
+	mkdir -p ~/.config/git
+	stow -Rt ~/.config/git git 
 	@echo "=> Installing Vim config"
-	mkdir -p ~/.vim
-	stow -Rt ~/.vim vim
+	mkdir -p ~/.config/nvim
+	stow -Rt ~/.config/nvim vim
 	git submodule update --init --recursive
 	@echo "=> Installing tmux config"
-	stow -Rt ~ tmux
+	mkdir -p ~/.config/tmux
+	stow -Rt ~/.config/tmux tmux
 	@echo "=> Installing NewsBoat config"
-	stow -Rt ~ newsboat
+	mkdir -p ~/.config/newsboat	
+	stow -Rt ~/.config/newsboat newsboat
 	@echo "=> Installing i3 configs"
 	stow -Rt ~/.config/i3 i3
 	stow -Rt ~/.config/i3status i3status
