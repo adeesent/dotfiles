@@ -3,6 +3,9 @@ all: install
 
 .PHONY: install
 install:
+	@echo "=> Installing bash config"
+	mkdir -p ~/.config/bash
+	stow -Rt ~/.config/bash bash 
 	@echo "=> Installing Git config"
 	mkdir -p ~/.config/git
 	stow -Rt ~/.config/git git 

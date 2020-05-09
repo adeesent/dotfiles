@@ -1,0 +1,5 @@
+# go path
+export GOPATH="${HOME}/go"
+
+# add go path
+export PATH="$GOPATH/bin:$PATH"

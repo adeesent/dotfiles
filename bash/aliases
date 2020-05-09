@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# Easier navigation
+alias ..="cd .."
+
+# List files
+alias l="ls -lhF --color=auto"
+alias la="ls -lahF --color=auto"
+alias ls="ls -lhF --color=auto"
+
+# Set nvim as vi or v
+alias vi="nvim"
+alias v="nvim"
+
