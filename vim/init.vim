@@ -2,6 +2,9 @@ call plug#begin('~/.vim/plugged')
 Plug 'chr4/nginx.vim'
 Plug 'fatih/vim-go'
 Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'tpope/vim-commentary'
+Plug 'ap/vim-css-color' 
 call plug#end()
 
 " Basic configuration {{{1
