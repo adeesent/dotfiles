@@ -1,0 +1,21 @@
+#!/bin/sh
+
+battery() {
+	for battery in /sys/class/power_supply/BAT?
+	do
+		# Get its remaining capacity and charge status.
+		capacity=$(cat "$battery"/capacity) || break
+		status=$(sed "s/[Dd]ischarging/d/;s/[Nn]ot charging/n/;s/[Cc]harging/c/;s/[Uu]nknown/u/;s/[Ff]ull/f/" "$battery"/status)
+
+		# If it is discharging and 25% or less, we will add a ❗ as a warning.
+		 [ "$capacity" -le 25 ] && [ "$status" = "🔋" ] && warn="❗"
+
+		printf "b(%s): %s%s " "$status" "$warn" "$capacity"
+		unset warn
+	done | sed 's/ *$//'
+}
+
+while :; do
+	xsetroot -name "| $(battery) | $(date +"%d %b %H:%M")"
+	sleep 1m
+done

@@ -3,3 +3,6 @@ export GOPATH="${HOME}/go"
 
 # add go path
 export PATH="$GOPATH/bin:$PATH"
+
+# add .local/bin path
+export PATH="$HOME/.local/bin:$PATH"
