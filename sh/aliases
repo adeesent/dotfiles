@@ -6,9 +6,10 @@ alias ..="cd .."
 # List files
 alias l="ls -lhF --group-directories-first --color=auto"
 alias la="ls -lahF --group-directories-first --color=auto"
-alias ls="ls -lhF --group-directories-first --color=auto"
 
 # Set nvim as vi or v
 alias vi="nvim"
 alias v="nvim"
 
+# Begin week from Monday
+alias cal="cal -m"
